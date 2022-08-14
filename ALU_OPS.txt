@@ -1,0 +1,12 @@
+
+aluControlInput         desired operation      			RTL 
+-------------------------------------------------------------------------------------     	
+0000			complex add				zd <= zs+zt
+1000			normal add				zd <- zs[31:16] + zt
+0001			complex subtrction			zd <= zs-zt						
+0100			complex conjugate			zd <= zs'
+0010			complex division			zd <= zs/zt
+0011			complex multiplication			zd <= zs.zt
+0101			shift left logical			zd <= zs sll zt[10:6]
+0110			shift right logical			zd <= zs srl zt[10:6]
+1111			no operation(high ampedance)            NOP

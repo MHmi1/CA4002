@@ -1,0 +1,19 @@
+--OPCODE    FUNCT     FUNCT(bitS)  OPRTN     regDst    memToReg    regW    memR    memW    branch   aluSrc    
+
+--Arithmetic
+--000000    addc      110000       0000        1         0          1        0       0        0       0           
+--000000    subc      110001       0001        1         0          1        0       0        0       0        
+
+--Data transfer
+--010000    lc        XXXXXX       1000        0         1          1        1       0        0       1         
+--010001    sc        XXXXXX       1000        X         X          0        0       1        0       1        
+
+--Logical
+--000000    Negc      110100       0100        1         0          1        0       0        0       0         
+--000000    divc      110011       0010        1         0          1        0       0        0       0         
+--000000    mulc      110010       0011        1         0          1        0       0        0       0         
+--000000    shL       110101       0101        1         0          1        0       0        0       0         
+--000000    shR       110110       0110        1         0          1        0       0        0       0         
+
+--cond. branch
+--000100    bne       XXXXXX       0001        X         X          0        0       0        1       0?x 
