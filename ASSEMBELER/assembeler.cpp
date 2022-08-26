@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#define NOP "00000000000000000000000000000000" // 32 of '0'
+#define NOP "00000000000000000000000000000000" // 32 of "0"
 using namespace std;
 
 /* This struct is helpful for tying labels to their address for branch and jump instructions */
